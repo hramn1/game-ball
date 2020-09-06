@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal{
+  background: #daf7ff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  padding: 20px;
+  width: 500px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 100px;
+  text-align: center;
+  z-index: 3;
+}
+.button{
+  border: none;
+  background: #159623;
+  padding: 14px 50px;
+  font-size: 20px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+.modal-msg{
+  font-size: 20px;
+  color: #104fcf;
+}
