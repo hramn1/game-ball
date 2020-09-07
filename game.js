@@ -33,7 +33,7 @@ const game = {
 
     gameStart() {
         const timerGame = setTimeout(function () {
-            game.gameOver(`Вы выграли!`);
+            game.gameOver("Вы выграли!");
         }, GAME_CONSTANTS.GAME_TIME);
 
         const rectangle = new Array(5)
@@ -81,7 +81,7 @@ const circle = {
         ctx.font = "60px Segoe UI Emoji";
         ctx.textAlign = "left";
         ctx.textBaseline = "top";
-        ctx.fillText("😾", this.x, this.y, 60);
+        ctx.fillText("🏀", this.x, this.y, 60);
         ctx.closePath();
     },
 
@@ -123,14 +123,14 @@ class Rectangle {
         ctx.font = `${this.width}px Segoe UI Emoji`;
         ctx.textAlign = "left";
         ctx.textBaseline = "top";
-        ctx.fillText("🗿", this.x, this.y, this.width);
+        ctx.fillText("🚌", this.x, this.y, this.width);
         ctx.closePath();
     }
 
     move(timerGame) {
         this.x = this.x - this.velocity;
         if (this.isHit()) {
-            game.gameOver('Вы проиграли', timerGame);
+            game.gameOver("Вы проиграли", timerGame);
         }
     }
 
@@ -155,9 +155,3 @@ class Rectangle {
         );
     }
 }
-
-
-
-
-
-
